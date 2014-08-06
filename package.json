@@ -1,0 +1,18 @@
+{
+  "name": "sql-svc",
+  "version": "0.0.0",
+  "description": "SQL-JSON micro-service",
+  "main": "server.js",
+  "scripts": {
+    "test": "tap test"
+  },
+  "keywords": [
+    "SQL",
+    "MicroService"
+  ],
+  "author": "Tom",
+  "license": "MIT",
+  "dependencies": {
+    "bl": "^0.9.0"
+  }
+}
