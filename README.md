@@ -18,6 +18,19 @@ following attributes:
 }
 ```
 
-Response will be a stream of json documents.
+Response will be an array of json documents. 
+
+## TODO
+
+* Add `ca` option
+* Validate JSON
+
+## Contributions
+
+Welcome.
+
+## LICENSE
+
+MIT
 
 
