@@ -1,35 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
     <title>Sql2json by twilson63</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/twilson63/sql2json">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/twilson63/sql2json/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/twilson63/sql2json/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <header>
-      <div class="container">
-        <h1>Sql2json</h1>
-        <h2>A MySQL MicroService to query and return results in json...</h2>
+    <div class="wrapper">
 
-        <section id="downloads">
-          <a href="https://github.com/twilson63/sql2json/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/twilson63/sql2json/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/twilson63/sql2json" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+      <section>
+        <div id="title">
+          <h1>Sql2json</h1>
+          <p>A MySQL MicroService to query and return results in json...</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/twilson63">twilson63</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-    <div class="container">
-      <section id="main_content">
         <h1>
 <a name="sql2json" class="anchor" href="#sql2json"><span class="octicon octicon-link"></span></a>sql2json</h1>
+
+<p><a href="https://sql2json.herokuapp.com">https://sql2json.herokuapp.com</a></p>
 
 <p>A micro-service that takes a <code>json</code> document via a http <code>post</code> method to the <code>/api/query</code> url.  The document contains the
 following attributes:</p>
@@ -50,10 +62,34 @@ following attributes:</p>
 }
 </code></pre>
 
-<p>Response will be a stream of json documents.</p>
-      </section>
-    </div>
+<p>Response will be an array of json documents. </p>
 
+<h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<ul>
+<li>clone repo</li>
+<li><code>npm install</code></li>
+<li><code>npm start</code></li>
+</ul><h2>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>TODO</h2>
+
+<ul>
+<li>Add <code>ca</code> option</li>
+<li>Validate JSON</li>
+</ul><h2>
+<a name="contributions" class="anchor" href="#contributions"><span class="octicon octicon-link"></span></a>Contributions</h2>
+
+<p>Welcome.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>LICENSE</h2>
+
+<p>MIT</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
