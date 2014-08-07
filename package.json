@@ -14,6 +14,7 @@
   "author": "Tom",
   "license": "MIT",
   "dependencies": {
-    "bl": "^0.9.0"
+    "bl": "^0.9.0",
+    "mysql": "^2.4.2"
   }
 }
