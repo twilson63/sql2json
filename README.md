@@ -1,5 +1,7 @@
 # sql2json 
 
+https://sql2json.herokuapp.com
+
 A micro-service that takes a `json` document via a http `post` method to the `/api/query` url.  The document contains the
 following attributes:
 
@@ -18,7 +20,14 @@ following attributes:
 }
 ```
 
+
 Response will be an array of json documents. 
+
+## Install
+
+* clone repo
+* `npm install`
+* `npm start`
 
 ## TODO
 
