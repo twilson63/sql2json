@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Sql2json by twilson63</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Sql2json</h1>
+        <h2>A MySQL MicroService to query and return results in json...</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/twilson63/sql2json/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/twilson63/sql2json/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/twilson63/sql2json" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="sql2json" class="anchor" href="#sql2json"><span class="octicon octicon-link"></span></a>sql2json</h1>
+
+<p>A micro-service that takes a <code>json</code> document via a http <code>post</code> method to the <code>/api/query</code> url.  The document contains the
+following attributes:</p>
+
+<ul>
+<li>url - A database url describing your mysql connection</li>
+<li>query - A string that contains your sql query.</li>
+<li>ca - [optional] - a string that contians your ca file for secure queries</li>
+</ul><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a name="post-apiquery" class="anchor" href="#post-apiquery"><span class="octicon octicon-link"></span></a>POST /api/query</h3>
+
+<pre><code>{
+  "url": "mysql://user:pass@server/database",
+  "query": "select * from foo;"
+}
+</code></pre>
+
+<p>Response will be a stream of json documents.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
