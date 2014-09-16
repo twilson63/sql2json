@@ -16,6 +16,8 @@ http.createServer(function(req, res) {
       conn.query(jsonDoc.query, function(e,rows) {
         if (e) { return send(500, {'Content-Type': 'plain/text'}, e.message); }
         send(200, {'Content-Type': 'application/json'}, JSON.stringify(rows));
+        conn.end();
+        conn = null;
       });
     }));
     return;
